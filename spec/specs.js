@@ -11,4 +11,8 @@ describe('triangleChecker', function() {
     expect(triangleChecker(10,11,10)).to.equal("Isosceles");
   });
 
+  it("returns when three given values cannot create a triangle", function(){
+    expect(triangleChecker(2,2,8)).to.equal("Not a Triangle");
+  });
+
 });
