@@ -24,23 +24,7 @@ $(document).ready(function(){
 
     result = triangleChecker(side1, side2, side3)
 
-    if (result === "Not a Triangle"){
-      $(".answer").text("Not a Triangle")
-    }
-
-    else if (result === "Equilateral"){
-    $(".answer").text("Equilateral");
-  }
-
-    else if (result === "Scalene"){
-    $(".answer").text("Scalene");
-  }
-
-    else if (result === "Isosceles"){
-      $(".answer").text("Isosceles");
-    }
-
-
+    $(".answer").text(result)
 
     event.preventDefault();
   });
